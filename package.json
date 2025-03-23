@@ -1,8 +1,8 @@
 {
-  "name": "js-template-webpack-eslint-prettier",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "barebones-ui-kit",
+  "version": "0.1.0",
+  "description": "A reusable UI component kit in vanilla JavaScript",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "npm run lint:fix && npm run format",
@@ -16,10 +16,27 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier --write ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "vanilla-js",
+    "ui-kit",
+    "components",
+    "dropdown",
+    "carousel",
+    "frontend",
+    "reusable"
+  ],
+  "author": "Aneesh AR",
+  "license": "MIT",
   "type": "commonjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "css-loader": "^7.1.2",
     "eslint": "^8.57.1",
