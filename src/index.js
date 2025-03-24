@@ -1,3 +1,8 @@
+// src/index.js
+import { initDropdowns } from './components/dropdown';
+import './components/dropdown/dropdown.css';
 import './styles.css';
 
-console.log('Template Repository');
+document.addEventListener('DOMContentLoaded', () => {
+  initDropdowns();
+});
