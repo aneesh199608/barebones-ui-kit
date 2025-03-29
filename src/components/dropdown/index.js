@@ -1,4 +1,5 @@
 // src/components/dropdown/index.js
+import './dropdown.css'; // ✅ already there based on your message
 
 export class Dropdown {
   constructor(root) {

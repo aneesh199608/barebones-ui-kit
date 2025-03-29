@@ -1,8 +1,1 @@
-// src/index.js
-import { initDropdowns } from './components/dropdown';
-import './components/dropdown/dropdown.css';
-import './styles.css';
-
-document.addEventListener('DOMContentLoaded', () => {
-  initDropdowns();
-});
+export { Dropdown, initDropdowns } from './components/dropdown/index.js';

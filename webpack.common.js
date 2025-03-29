@@ -1,10 +1,12 @@
-const path = require('path');
+import path, { dirname } from 'path';
+import { fileURLToPath } from 'url';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
-module.exports = {
+export default {
   entry: {
-    app: './src/index.js',
+    app: './src/dev.js',
   },
   output: {
     filename: 'main.js',
@@ -23,7 +25,6 @@ module.exports = {
       template: './src/index.html',
     }),
   ],
-
   module: {
     rules: [
       {

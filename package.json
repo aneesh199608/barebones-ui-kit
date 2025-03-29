@@ -27,11 +27,10 @@
   ],
   "author": "Aneesh AR",
   "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "types": "./index.d.ts"
+      "import": "./dist/index.js"
     }
   },
   "files": [
