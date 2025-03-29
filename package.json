@@ -1,6 +1,6 @@
 {
   "name": "barebones-ui-kit",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "A reusable UI component kit in vanilla JavaScript",
   "main": "./dist/index.js",
   "scripts": {
